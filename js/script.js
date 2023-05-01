@@ -96,7 +96,7 @@ $(document).ready(function () {
 
     $.ajax({
       type: "POST",
-      url: "./formProcessor.php",
+      url: "./includes/formProcessor.php",
       data: formData,
       dataType: "json",
       encode: true,
