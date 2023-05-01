@@ -13,7 +13,10 @@
             <div class="col-md-12">
               <div class="heading-wraper text-center margin-bottom-80">
                 <h2><?php echo $trans['team_title']; ?></h2>
+                <br>
+                <br>
                 <h4><?php echo $trans['team_tagline']; ?></h4>
+                <br>
                 <hr class="heading-devider gradient-orange">
               </div>
             </div>
