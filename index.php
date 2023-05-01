@@ -33,7 +33,7 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-md-4 col-md-12">
+      <div class="col-md-4 col-sm-12">
         <div class="feature-wiget">
           <div class="icon-wraper">
             <i class="ion-android-person-add"></i>
@@ -45,7 +45,7 @@
         </div>
       </div>
 
-      <div class="col-md-4 col-md-12">
+      <div class="col-md-4 col-sm-12">
         <div class="feature-wiget">
           <div class="icon-wraper">
             <i class="ion-android-hand"></i>
@@ -58,7 +58,7 @@
         </div>
       </div>
       
-      <div class="col-md-4 col-md-12">
+      <div class="col-md-4 col-sm-12">
         <div class="feature-wiget">
           <div class="icon-wraper">
             <i class="ion-android-phone-portrait"></i>
@@ -118,11 +118,10 @@
 
   <div id='stars'></div>
   <div id='stars2'></div>
-  <div id='stars3'></div>
 
   <div class="container">
     <div class="row">
-      <div class="col-md-4 text-center">
+      <div class="col-md-12 text-center">
         <h3 class="cta-heading text-white"><?php echo $trans['power_message_a']; ?> </h3>
         <p class="text-white"><?php echo $trans['power_message_a1']; ?> </p>
       </div>

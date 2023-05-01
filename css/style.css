@@ -200,9 +200,8 @@ header{
 	width: 85px;
 	height: 2px;
 	background-color: var(--RED);
-	left: 45%;
-	margin-top: 7px;
-	margin-bottom: 5px;
+	left: 40%;
+	margin: 8px auto;
 }
 /*******************************************CARD*****************************************************/
 .card{
