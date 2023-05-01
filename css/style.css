@@ -177,12 +177,13 @@ header{
 .feature-wiget{
 	padding-top: 15px;
 	padding-bottom: 15px;
+	text-align: center;
 }
 .feature-wiget h4, .feature-wiget i{
 	color: #433b88;
 }
 .feature-wiget i{
-	font-size: 36px;
+	font-size: 3em;
 }
 .feature-wiget h4{
 	text-transform: uppercase;
@@ -196,10 +197,10 @@ header{
 	content: '';
 	position: absolute;
 	top: 100%;
-	width: 35px;
+	width: 85px;
 	height: 2px;
-	background-color: #0e153a;
-	left: 0;
+	background-color: var(--RED);
+	left: 45%;
 	margin-top: 7px;
 	margin-bottom: 5px;
 }

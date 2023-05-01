@@ -14,7 +14,7 @@ $translations = array(
         "welcome2" => "Tech for humans",
         "welcome2l1" => "Empowering your busines with innovative software solutions",
         
-        "feature_t1" => "Friendly Technology",
+        "feature_t1" => "Friendly <br> Technology",
         "feature_c1" => "We understand that each business has unique needs. That is why we offer easily customisable solutions to ensure your website is tailored to your specific requirements. With our expertise, we can create a experiences that reflects your brand and sets you apart from the competition.",
         "feature_t2" => "Human centered interfaces",
         "feature_c2" => "We believe that the user should be at the heart of every design decision. That is why we specialize in creating human-centered interfaces that prioritize usability and accessibility. Trust us to design interfaces that connect with your users and drive business success.",

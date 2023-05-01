@@ -32,7 +32,8 @@
 <section id="feature" class="padding-top-bottom-120 bg-image-fit-50" style="background:url(images/1_back.png)">
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
+
+      <div class="col-md-4 col-md-12">
         <div class="feature-wiget">
           <div class="icon-wraper">
             <i class="ion-android-person-add"></i>
@@ -42,17 +43,22 @@
             <p><?php echo $trans['feature_c1']; ?></p>
           </div>
         </div>
+      </div>
+
+      <div class="col-md-4 col-md-12">
         <div class="feature-wiget">
           <div class="icon-wraper">
             <i class="ion-android-hand"></i>
           </div>
           <div class="content">
             <h4 class="bottom-line"><?php echo $trans['feature_t2']; ?></h4>
-
             <ion-icon name="accessibility-outline"></ion-icon>
             <p><?php echo $trans['feature_c2']; ?></p>
           </div>
         </div>
+      </div>
+      
+      <div class="col-md-4 col-md-12">
         <div class="feature-wiget">
           <div class="icon-wraper">
             <i class="ion-android-phone-portrait"></i>
@@ -63,6 +69,7 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -115,7 +122,7 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-12 text-center">
+      <div class="col-md-4 text-center">
         <h3 class="cta-heading text-white"><?php echo $trans['power_message_a']; ?> </h3>
         <p class="text-white"><?php echo $trans['power_message_a1']; ?> </p>
       </div>
