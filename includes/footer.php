@@ -4,7 +4,7 @@
         <div class="col-md-4">
           <div class="footer-left-content">
             <div class="logo-colored logo-wraper">
-              <img src="./images/Logo_color.png" alt=""> Artyficial </span>
+              <img src="./../images/Logo_color.png" alt=""> Artyficial </span>
               <span class="tslogan"> Technologies S.A.S</span>
             
             </div>

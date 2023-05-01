@@ -62,19 +62,19 @@ $translations = array(
         "team_title" => "Leadership Team",
         "team_tagline" => "With our dedicated administrative team, your company will be in the best hands.",
         "team_member1" => "Asael Arenas",
-        "team_member1_picUrl" => "./images/memberpic_asael2.jpg",
+        "team_member1_picUrl" => "./../images/memberpic_asael2.jpg",
         "team_member1_title" => "CEO/CTO",
 
         "team_member2" => "Leidy Cardenas",
-        "team_member2_picUrl" => "./images/memberpic_leidy.jpg",
+        "team_member2_picUrl" => "./../images/memberpic_leidy.jpg",
         "team_member2_title" => "Accounting/HR",
 
         "team_member3" => "Laura Arenas",
-        "team_member3_picUrl" => "./images/memberpic_laura.jpg",
+        "team_member3_picUrl" => "./../images/memberpic_laura.jpg",
         "team_member3_title" => "CSS - Customer Support Specialist",
 
         "team_member4" => "Camilo Cardenas",
-        "team_member4_picUrl" => "./images/memberpic_camilo.jpg",
+        "team_member4_picUrl" => "./../images/memberpic_camilo.jpg",
         "team_member4_title" => "CCO - Chief Creative Officer",
 
         "footer_col1_tit" => "Miami",
@@ -153,19 +153,19 @@ $translations = array(
         "team_title" => "Equipo Adminitrativo",
         "team_tagline" => "Con nuestro equipo administrativo líder en la industria, su empresa estará en las mejores manos.",
         "team_member1" => "Asael Arenas",
-        "team_member1_picUrl" => "./images/memberpic_asael2ES.jpg",
+        "team_member1_picUrl" => "./../images/memberpic_asael2ES.jpg",
         "team_member1_title" => "CEO/CTO",
 
         "team_member2" => "Leidy Cardenas",
-        "team_member2_picUrl" => "./images/memberpic_leidy.jpg",
+        "team_member2_picUrl" => "./../images/memberpic_leidy.jpg",
         "team_member2_title" => "Contabilidad/Recursos Humanos",
 
         "team_member3" => "Laura Arenas",
-        "team_member3_picUrl" => "./images/memberpic_laura.jpg",
+        "team_member3_picUrl" => "./../images/memberpic_laura.jpg",
         "team_member3_title" => "CSS - Especialista en soporte al cliente",
 
         "team_member4" => "Camilo Cardenas",
-        "team_member4_picUrl" => "./images/memberpic_camilo.jpg",
+        "team_member4_picUrl" => "./../images/memberpic_camilo.jpg",
         "team_member4_title" => "CCO - Jefe Creativo",
         
         "footer_col1_tit" => "Miami",

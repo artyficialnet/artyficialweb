@@ -30,13 +30,13 @@ $trans = $translations[$language];
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./../css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-  <link rel="stylesheet" href="./css/ionicons.min.css">
-  <link rel="stylesheet" href="./css/owl.carousel.css">
-  <link rel="stylesheet" href="./css/owl.theme.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./../css/ionicons.min.css">
+  <link rel="stylesheet" href="./../css/owl.carousel.css">
+  <link rel="stylesheet" href="./../css/owl.theme.css">
+  <link rel="stylesheet" href="./../css/style.css">
 </head>
 
 <body>
@@ -52,7 +52,7 @@ $trans = $translations[$language];
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="http://artyficial.net"><span class="logo-wraper logo-white">
-              <img src="./images/Logo.png" alt="Logo Artyficial"> Artyficial </span>
+              <img src="./../images/Logo.png" alt="Logo Artyficial"> Artyficial </span>
             <span class="tslogan"> Technologies S.A.S</span>
           </a>
         </div>
