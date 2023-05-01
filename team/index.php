@@ -10,10 +10,10 @@
         <div class="col-md-12">
 
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
               <div class="heading-wraper text-center margin-bottom-80">
-                <h4><?php echo $trans['team_title']; ?></h4>
-                <h3><?php echo $trans['team_tagline']; ?></h3>
+                <h2><?php echo $trans['team_title']; ?></h2>
+                <h4><?php echo $trans['team_tagline']; ?></h4>
                 <hr class="heading-devider gradient-orange">
               </div>
             </div>
