@@ -39,7 +39,7 @@ $trans = $translations[$language];
   <link rel="stylesheet" href="./../css/style.css">
 </head>
 
-<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) New-->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C5YV0KDQ5L"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
