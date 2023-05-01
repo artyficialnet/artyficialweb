@@ -143,7 +143,7 @@
 <section id="testimonial" class="testimonial-section padding-top-bottom-90 gradient-violat">
   <div class="container">
     <div class="heading-wraper text-center hide">
-      <h4 class="text-white"><?php echo $trans['testim_title']; ?></h4>
+      <h4 class="text-white">YOLO: <?php echo $trans['testim_title']; ?></h4>
       <hr class="heading-devider gradient-orange">
     </div>
     <div class="row">
