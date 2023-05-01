@@ -1,5 +1,5 @@
 <div class="team-head">
-  <?php require('./includes/header.php'); ?>
+  <?php require('../includes/header.php'); ?>
 </div>
 
 <div class="team-body">

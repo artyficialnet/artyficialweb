@@ -45,7 +45,7 @@ $emailConfig = [
 $result = $mgClient->messages()->send($DOMAIN, $emailConfig);
 $messageId = $result->getId();
 
-# Respond for Ajax
+# Response for Ajax
 if ($messageId) {
     header('Content-Type: application/json');
     echo json_encode(['success' => true, 'messageId' => $messageId]);
