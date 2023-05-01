@@ -1,5 +1,5 @@
 <?php
-require '../../html/vendor/autoload.php';
+require '../../../html/vendor/autoload.php';
 
 #Mailgun.org LideraMe account
 $DOMAIN = 'sandbox6a2c1e5633c94878be001b9d800bc08d.mailgun.org';
