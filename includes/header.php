@@ -45,7 +45,6 @@ $trans = $translations[$language];
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-C5YV0KDQ5L');
 </script>
 
