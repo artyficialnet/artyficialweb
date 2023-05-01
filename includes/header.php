@@ -1,5 +1,5 @@
 <?php
-include('/includes/translations.php');
+include('translations.php');
 $user_lang = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
 $language = $user_lang[0] . $user_lang[1];
 //Hardcode Language
