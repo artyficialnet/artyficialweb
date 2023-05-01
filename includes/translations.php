@@ -59,7 +59,8 @@ $translations = array(
         "contact_message" => "Message",
         "contact_btn_send" => "Send Message",
 
-        "team_title" => "The team",
+        "team_title" => "Leadership Team",
+        "team_tagline" => "With our dedicated administrative team, your company will be in the best hands.",
         "team_member1" => "Asael Arenas",
         "team_member1_picUrl" => "./images/memberpic_asael2.jpg",
         "team_member1_title" => "CEO/CTO",
@@ -149,7 +150,8 @@ $translations = array(
         "contact_message" => "Mensaje",
         "contact_btn_send" => "Enviar Mensaje",
         
-        "team_title" => "The team",
+        "team_title" => "Equipo Adminitrativo",
+        "team_tagline" => "Con nuestro equipo administrativo líder en la industria, su empresa estará en las mejores manos.",
         "team_member1" => "Asael Arenas",
         "team_member1_picUrl" => "./images/memberpic_asael2ES.jpg",
         "team_member1_title" => "CEO/CTO",

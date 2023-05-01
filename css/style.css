@@ -1,4 +1,5 @@
 @import url('./custom.css');
+@import url('./stars.css');
 :root {
 	--RED: #BF455B;
     --BLUE: #465973;
@@ -6,7 +7,7 @@
     --ORANGE: #D9583B;
     --BLACK: #0D0D0D;
 }
-/****************************************TYPOGRAPHY ***************************************************/
+/************************** MAIN *******************************/
 body{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;

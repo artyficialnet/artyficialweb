@@ -1,4 +1,4 @@
-<?php require('./includes/header.php'); ?>
+<?php require_once('./includes/header.php'); ?>
 
 <section id="introduction" class="gradient-violat padding-top-90 home-slider">
   <div id='stars'></div>
@@ -239,4 +239,4 @@
   </div>
 </section>
 
-<?php require('./includes/footer.php'); ?>
+<?php require_once('./includes/footer.php'); ?>

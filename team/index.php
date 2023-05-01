@@ -1,5 +1,5 @@
 <div class="team-head">
-  <?php require('../includes/header.php'); ?>
+  <?php require_once('../includes/header.php'); ?>
 </div>
 
 <div class="team-body">
@@ -8,10 +8,12 @@
       <div class="row">
 
         <div class="col-md-12">
+
           <div class="row">
             <div class="col-md-6">
               <div class="heading-wraper text-center margin-bottom-80">
                 <h4><?php echo $trans['team_title']; ?></h4>
+                <h3><?php echo $trans['team_tagline']; ?></h3>
                 <hr class="heading-devider gradient-orange">
               </div>
             </div>
@@ -64,5 +66,5 @@
     </div>
   </section>
 
-  <?php require('./includes/footer.php'); ?>
+  <?php require_once('./includes/footer.php'); ?>
 </div>
