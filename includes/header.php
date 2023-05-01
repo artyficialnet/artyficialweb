@@ -39,6 +39,16 @@ $trans = $translations[$language];
   <link rel="stylesheet" href="./../css/style.css">
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C5YV0KDQ5L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C5YV0KDQ5L');
+</script>
+
 <body>
   <header id="home" class="gradient-violat">
     <nav class="navbar navbar-default navbar-fixed-top">
