@@ -1,21 +1,28 @@
 <?php
 include('translations.php');
-$user_lang = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
-$language = $user_lang[0] . $user_lang[1];
-$trans = $translations[$language];
+$user_lang = filter_input(INPUT_SERVER, 'HTTP_ACCEPT_LANGUAGE', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+if ($user_lang !== false) {
+  $language = substr($user_lang, 0, 2);
+  $language = preg_replace('/[^a-zA-Z]/', '', $language);
+} else {
+  // default language if the header is not present or invalid
+  $language = 'en';
+}
 //Hardcode Language
 //$language = "es";
+$trans = $translations[$language];
 ?>
 
 <!DOCTYPE html>
 <html lang="<?php echo $language ?>">
+
 <head>
   <!-- Meta tags always come first -->
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
+
   <title>Artyficial Technologies S.A.S.</title>
-  
+
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Artyficial's Web development agency main web site.">
   <meta name="keywords" content="web development, software development, Bogota, Colombia">
@@ -32,7 +39,7 @@ $trans = $translations[$language];
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body >
+<body>
   <header id="home" class="gradient-violat">
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -45,7 +52,7 @@ $trans = $translations[$language];
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="http://artyficial.net"><span class="logo-wraper logo-white">
-            <img src="./images/Logo.png" alt=""> Artyficial </span>
+              <img src="./images/Logo.png" alt="Logo Artyficial"> Artyficial </span>
             <span class="tslogan"> Technologies S.A.S</span>
           </a>
         </div>
