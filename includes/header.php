@@ -2,18 +2,25 @@
 include('translations.php');
 $user_lang = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
 $language = $user_lang[0] . $user_lang[1];
+$trans = $translations[$language];
 //Hardcode Language
 //$language = "es";
-$trans = $translations[$language];
 ?>
 
 <!DOCTYPE html>
 <html lang="<?php echo $language ?>">
 <head>
-  <!-- Required meta tags always come first -->
+  <!-- Meta tags always come first -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <title>Artyficial Technologies S.A.S.</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Artyficial's Web development agency main web site.">
+  <meta name="keywords" content="web development, software development, Bogota, Colombia">
+  <meta name="author" content="||artyficial.net||">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="./css/bootstrap.min.css">
