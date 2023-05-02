@@ -3,7 +3,7 @@
 </div>
 
 <div class="team-body">
-  <section id="services" class="padding-top-90">
+  <section id="team" class="padding-top-90">
     <div class="container">
       <div class="row">
 
