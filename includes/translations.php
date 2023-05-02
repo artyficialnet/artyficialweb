@@ -105,7 +105,7 @@ $translations = array(
         "welcome2" => "Tecnología para las personas",
         "welcome2l1" => "Potenciando tu negocio con soluciones de software",
         
-        "feature_t1" => "Tecnología amigable",
+        "feature_t1" => "Tecnología <br> amigable",
         "feature_c1" => "Entendemos que cada negocio tiene necesidades únicas. Por eso, ofrecemos soluciones fácilmente personalizables para asegurarnos de que tu sitio web se adapte a tus requerimientos específicos. Con nuestra experiencia, podemos crear una experiencia que refleje tu marca y te diferencie de la competencia.",
         "feature_t2" => "Interfaces centradas en el usuario",
         "feature_c2" => "Creemos que el usuario debe estar en el centro de cada decisión de diseño. Por eso, nos especializamos en crear interfaces centradas en el usuario que priorizan la usabilidad y accesibilidad. Confía en nosotros para diseñar interfaces que conecten con tus usuarios y conduzcan al éxito empresarial.",
