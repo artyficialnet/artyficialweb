@@ -115,5 +115,9 @@ footer{
 
 .thankyou{
     text-align: center;
+    padding: 3em;
 }
 
+.col-md-12.text-center.btn-send_container{
+    margin-top: 2em;
+}

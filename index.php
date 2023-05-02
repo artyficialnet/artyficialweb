@@ -200,7 +200,7 @@
   </div>
 </section>
 
-<section id="contactus" class="padding-top-bottom-120 contact">
+<section id="contactus" class="padding-top-bottom-20 contact">
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
@@ -234,7 +234,7 @@
               </div>
             </div>
 
-            <div class="col-md-12 text-center">
+            <div class="col-md-12 text-center btn-send_container">
               <button type="submit" class="btn btn-orange border-none btn-rounded-corner"><?php echo $trans['contact_btn_send']; ?><span class="icon-on-button"><i class="ion-ios-arrow-thin-right"></i></span></button>
             </div>
 
