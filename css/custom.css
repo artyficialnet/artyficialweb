@@ -1,123 +1,138 @@
-/* :root {
-    --RED: #BF455B;
-    --BLUE: #465973;
-    --MUSTARD: #BF8845;
-    --ORANGE: #D9583B;
-    --BLACK: #0D0D0D;
-  } */
-
 section.gradient-violat {
-	/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-    background: linear-gradient(-45deg, var(--ORANGE), var(--RED), var(--BLUE), var(--MUSTARD));
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	/* height: 100vh; */
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+  background: linear-gradient(
+    -45deg,
+    var(--ORANGE),
+    var(--RED),
+    var(--BLUE),
+    var(--MUSTARD)
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  /* height: 100vh; */
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-body{
-    font-size: 1.8em !important;
+body {
+  font-size: 1.8em !important;
 }
 
 /* HIDE */
 .team nav.navbar #bs-example-navbar-collapse-1,
-.hide{ display: none !important;}
-
-
-.btn-orange, .gradient-orange{
-    background-image: linear-gradient(125deg, var(--RED) 0%, var(--ORANGE) 32%, rvar(--RED) 100%);
+.hide {
+  display: none !important;
 }
+
+.btn-orange,
+.gradient-orange {
+  background-image: linear-gradient(
+    125deg,
+    var(--RED) 0%,
+    var(--ORANGE) 32%,
+    rvar(--RED) 100%
+  );
+}
+
 .tslogan {
-    display: block;
-    margin-left: 50px;
-    top: -15px;
-    position: relative;
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: whitesmoke;
+  display: block;
+  margin-left: 50px;
+  top: -15px;
+  position: relative;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: whitesmoke;
 }
-
 
 .logo-colored,
-.logo-colored .tslogan{
-    color: var(--ORANGE) !important;    
+.logo-colored .tslogan {
+  color: var(--ORANGE) !important;
 }
 
-.logo-colored .tslogan{
- margin-left: 50px;
- top: -15px;
+.logo-colored .tslogan {
+  margin-left: 50px;
+  top: -15px;
 }
 
 .logo-wraper img {
-    margin-right: 0 !important;
+  margin-right: 0 !important;
 }
 
 .scroll-top-icon-container {
-    background: var(--MUSTARD)!important;
+  background: var(--MUSTARD) !important;
 }
 
-nav.gradient-violat{
-    background: linear-gradient(-45deg, var(--MUSTARD), var(--BLACK), var(--BLUE), var(--ORANGE));
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+nav.gradient-violat {
+  background: linear-gradient(
+    -45deg,
+    var(--MUSTARD),
+    var(--BLACK),
+    var(--BLUE),
+    var(--ORANGE)
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
-.footer-end-line{
-    background-color: var(--MUSTARD) !important;
-    cursor: pointer !important;
-
+.footer-end-line {
+  background-color: var(--MUSTARD) !important;
+  cursor: pointer !important;
 }
 
 /* Team Page */
-.team-head nav.navbar{
-    background: var(--BLACK) !important;
+.team-head nav.navbar {
+  background: var(--BLACK) !important;
 }
-.team-head ul.nav{
-    display: none;
+.team-head ul.nav {
+  display: none;
 }
-.team-body .padding-top-90{
-    padding-top: 200px;
+.team-body .padding-top-90 {
+  padding-top: 200px;
 }
 
-footer{
-    font-size: 0.8em;
+footer {
+  font-size: 0.8em;
 }
 
 .team-body p.card-text {
-    font-size: 0.7em;
+  font-size: 0.7em;
 }
 
-#services p{
-    text-align: left;
+#services p {
+  text-align: left;
 }
-#services .row{display: flex;}
-#services .row .col-md-4{display: flex; align-items: flex-end;}
+#services .row {
+  display: flex;
+}
+#services .row .col-md-4 {
+  display: flex;
+  align-items: flex-end;
+}
 
 .feature-wiget p,
-.services-content{
-    text-align: justify;
+.services-content {
+  text-align: justify;
 }
 .card {
-    box-shadow: 0px 4px 15px 0px var(--BLACK);
-    text-align: center;
-    padding-bottom: 5px;
+  box-shadow: 0px 4px 15px 0px var(--BLACK);
+  text-align: center;
+  padding-bottom: 5px;
 }
 
-.thankyou{
-    text-align: center;
-    padding: 3em;
+.thankyou {
+  text-align: center;
+  padding: 3em;
 }
 
-.col-md-12.text-center.btn-send_container{
-    margin-top: 2em;
+.col-md-12.text-center.btn-send_container {
+  margin-top: 2em;
 }
