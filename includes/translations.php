@@ -29,7 +29,7 @@ $translations = array(
         "service_t3" => "Web & mobile development",
         "service_c3" => "We work with cross-platform development tools and frameworks to build mobile applications that can run seamlessly on multiple platforms and the web. By using a single codebase, we are able to minimize development time and costs of operations.",
         "service_t4" => "Responsive development",
-        "service_c4" => "One of the key aspects of our responsive development service is our commitment to pixel-perfect design. We understand the importance of precision in design, and we go the extra mile to ensure that every element on a website is perfectly aligned and visually consistent.",
+        "service_c4" => "One of the key aspects of our responsive development service is our commitment to pixel-perfect design. We understand the importance of precision in design to ensure that every element on a website is perfectly aligned and visually consistent.",
         
         "power_message_a" => "Empowering your digital transformation",
         "power_message_a1" => "We make your business idea come true",
