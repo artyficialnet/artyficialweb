@@ -136,3 +136,10 @@ footer {
 .col-md-12.text-center.btn-send_container {
   margin-top: 2em;
 }
+
+img.card-img-top{
+  filter: grayscale(1);
+}
+img.card-img-top:hover{
+  filter: none;
+}
