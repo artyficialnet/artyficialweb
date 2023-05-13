@@ -122,6 +122,7 @@ footer {
 .feature-wiget p,
 .services-content {
   text-align: justify;
+  color: black;
 }
 .card {
   box-shadow: 0px 4px 15px 0px var(--BLACK);
