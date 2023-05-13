@@ -110,10 +110,11 @@ footer {
 #services p {
   text-align: left;
 }
-#services .row {
+#services .row, #customer-support .row {
   display: flex;
 }
-#services .row .col-md-4 {
+
+#services .row .col-md-4, #customer-support .row .col-md-6{
   display: flex;
   align-items: flex-end;
 }
