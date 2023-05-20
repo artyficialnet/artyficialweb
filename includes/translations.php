@@ -153,7 +153,7 @@ $translations = array(
         "team_title" => "Equipo Adminitrativo",
         "team_tagline" => "Con nuestro equipo administrativo líder en la industria <br> su empresa estará en las mejores manos",
         "team_member1" => "Asael Arenas",
-        "team_member1_picUrl" => "./../images/memberpic_asael2ES.jpg",
+        "team_member1_picUrl" => "./../images/memberpic_asael2.jpg",
         "team_member1_title" => "CEO/CTO",
 
         "team_member2" => "Leidy Cardenas",
