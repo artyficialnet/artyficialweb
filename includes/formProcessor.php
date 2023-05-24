@@ -1,12 +1,12 @@
 <?php
-require '../../html/vendor/autoload.php';
+require 'vendor/autoload.php';
 
 #Mailgun.org LideraMe account
 $DOMAIN = 'sandbox6a2c1e5633c94878be001b9d800bc08d.mailgun.org';
 $API_KEY = 'key-ba38b3c09adc02e478c6a5d788c6e68a';
 
-use Mailgun\HttpClient\HttpClientConfigurator;
 use Mailgun\Mailgun;
+use Mailgun\HttpClient\HttpClientConfigurator;
 
 $httpConfig = new HttpClientConfigurator();
 $httpConfig->setApiKey($API_KEY);
