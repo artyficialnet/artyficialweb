@@ -43,7 +43,7 @@ $translations = array(
         "testim_c2" => "A long time relationship where we have built all kind of services in multiple platforms with Artyficial. Allways a reliable crew.",
         "testim_t3" => "Yolanda Cardenas",
         "testim_t3d" => "Business Woman",
-        "testim_c3" => "We have found a reliable tech solutions provider. Its visionary concepts always bring to our multiple developments the differentiation factor.",
+        "testim_c3" => "We have found a reliable tech solutions provider. Its visionary concepts always bring to our multiple developments the differentiation factor. Our current projects are advancing as expected and the technical support from Artyficial team is key in the process of build a future proof company.",
 
         "support_title" => "24/7 customer support",
         "support_content" => "Our commitment to providing the best service possible extends beyond the initial development phase. We understand that our clients may have questions or concerns at any time, which is why we offer 24/7 customer support. With our reliable support, you can have peace of mind knowing that your business is in good hands.",
