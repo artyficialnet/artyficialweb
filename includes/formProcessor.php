@@ -17,8 +17,8 @@ $email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 $fullMessage = '';
-$toInboxs = 'asael2@gmail.com';
-$replyTo = 'artyficialsas@gmail.com';
+$toInboxs = 'info@artyficial.net';
+$replyTo = 'info@artyficial.net';
 $from = 'Artyficial Technologies <info@artyficial.net>';
 $fullMessage = "TXT contact AyF Website: " .
     " ::: Name: " . $name .
