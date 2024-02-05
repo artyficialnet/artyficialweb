@@ -40,9 +40,7 @@ $translations = array(
         "testim_c1" => "Artyficial, has crafted a series of customer-oriented applications for our organization, spanning from payment to order pickup management apps. Asael's patience, persistence and attention to detail is impressive. His applications exhibit thoughtful design, user-friendliness, and flawless performance, exceeding our expectations on every occasion.",
         "testim_t2" => "Edwin Merced",
         "testim_t2d" => "Educational Consultancy",
-        "testim_c2" => "The robust and enduring nature of our relationship is a testament to the dedication and competence exhibited by the Artyficial team.
-
-        The collaborative journey with Artyficial has not only been marked by successful project deliveries but has also fostered an environment of mutual trust and camaraderie. The team's commitment to excellence, coupled with their friendly and cordial approach, has significantly contributed to the positive dynamics of our long-term partnership.",
+        "testim_c2" => "A long time relationship where we have built all kind of services in multiple platforms with Artyficial. Allways a reliable crew. The team's commitment to excellence, coupled with their friendly and cordial approach, has significantly contributed to the positive dynamics of our long-term partnership.",
         "testim_t3" => "Yolanda Cardenas",
         "testim_t3d" => "Business Woman",
         "testim_c3" => "We have found a reliable tech solutions provider. Its visionary concepts always bring to our multiple developments the differentiation factor. Our current projects are advancing as expected and the technical support from Artyficial team is key in the process of build a future proof company.",
@@ -133,7 +131,7 @@ $translations = array(
         "testim_c1" => "Artyficial ha creado una serie de aplicaciones orientadas al cliente para nuestra organización, que van desde el pago hasta las aplicaciones de gestión de recogida de pedidos. La paciencia, persistencia y atención al detalle de Asael es impresionante. Sus aplicaciones exhiben un diseño cuidadoso, facilidad de uso y un rendimiento impecable, superando nuestras expectativas en cada ocasión.",
         "testim_t2" => "Edwin Merced",
         "testim_t2d" => "Consultoría educativa",
-        "testim_c2" => "El viaje colaborativo con Artyficial no solo se ha caracterizado por entregas exitosas de proyectos, sino que también ha fomentado un entorno de confianza mutua y camaradería. El compromiso del equipo con la excelencia, junto con su enfoque amigable y cordial, ha contribuido significativamente a la dinámica positiva de nuestra asociación a largo plazo.",
+        "testim_c2" => "Una relación de larga duración en la que hemos construido todo tipo de servicios en múltiples plataformas con Artyficial. Siempre un equipo confiable. El compromiso del equipo con la excelencia, junto con su enfoque amigable y cordial, ha contribuido significativamente a la dinámica positiva de nuestra asociación a largo plazo.",
         "testim_t3" => "Yolanda Cárdenas",
         "testim_t3d" => "Mujer de negocios",
         "testim_c3" => "Hemos encontrado un proveedor de soluciones tecnológicas confiable. Sus conceptos visionarios siempre aportan al factor de diferenciación en nuestros múltiples desarrollos.",
