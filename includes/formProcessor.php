@@ -1,9 +1,9 @@
 <?php
 require '../vendor/autoload.php';
 
-#Mailgun.org LideraMe account
-$DOMAIN = 'sandbox6a2c1e5633c94878be001b9d800bc08d.mailgun.org';
-$API_KEY = 'key-ba38b3c09adc02e478c6a5d788c6e68a';
+#Mailgun.org Artyficial.net Domain
+$DOMAIN = 'artyficial.net';
+$API_KEY = '26de353143842619149b9651ff2c9f8f-8c90f339-b043c6ca';
 
 use Mailgun\Mailgun;
 use Mailgun\HttpClient\HttpClientConfigurator;
