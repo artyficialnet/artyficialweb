@@ -40,7 +40,7 @@ $translations = array(
         "testim_c1" => "Artyficial, has crafted a series of customer-oriented applications for our organization, spanning from payment to order pickup management apps. Asael's patience, persistence and attention to detail is impressive. His applications exhibit thoughtful design, user-friendliness, and flawless performance, exceeding our expectations on every occasion.",
         "testim_t2" => "Edwin Merced",
         "testim_t2d" => "Educational Consultancy",
-        "testim_c2" => "Throughout our extensive history of collaboration, Artyficial has proven to be a steadfast and dependable partner in the creation and implementation of various services across different technological platforms. The robust and enduring nature of our relationship is a testament to the dedication and competence exhibited by the Artyficial team.
+        "testim_c2" => "The robust and enduring nature of our relationship is a testament to the dedication and competence exhibited by the Artyficial team.
 
         The collaborative journey with Artyficial has not only been marked by successful project deliveries but has also fostered an environment of mutual trust and camaraderie. The team's commitment to excellence, coupled with their friendly and cordial approach, has significantly contributed to the positive dynamics of our long-term partnership.",
         "testim_t3" => "Yolanda Cardenas",
