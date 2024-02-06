@@ -37,7 +37,7 @@
               <div class="footer-list-wiget">
                 <h4><?php echo $trans['footer_col3_tit']; ?></h4>
                 <div class="list-group">
-                  <a href="https://twitter.com/artyficial" class="list-group-item">Twitter</a>
+                  <a href="https://x.com/artyficial" class="list-group-item">X</a>
                   <a href="https://facebook.com/artyficialsas" class="list-group-item">Facebook</a>
                   <a href="https://github.com/artyficialnet" class="list-group-item">Github</a>
                 </div>
