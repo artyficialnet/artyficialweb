@@ -26,7 +26,7 @@ $fullMessage = "TXT contact AyF Website: " .
     " ::: Subject: " . $subject .
     " ::: Message: " . $message;
 
-$htmlMessage = "Contact from Artificial's Website: " .
+$htmlMessage = "Contact from Artyficial's Website: " .
     " <br> Name: " . $name .
     " <br> Email: " . $email .
     " <br> Subject: " . $subject .
