@@ -13,7 +13,7 @@
               <p></p>
               <a href="tel:<?php echo $trans['tel_contact']; ?>"><?php echo $trans['tel_contact']; ?></a>
 
-              <p><a href="mailto:<?php echo $trans['email_contact']; ?>"><?php echo $trans['email_corp']; ?></a></p>
+              <p><a href="mailto:<?php echo $trans['email_corp']; ?>"><?php echo $trans['email_corp']; ?></a></p>
             </div>
           </div>
         </div>

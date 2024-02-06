@@ -43,7 +43,7 @@ $translations = array(
         "testim_c2" => "A long time relationship where we have built all kind of services in multiple platforms with Artyficial. Allways a reliable crew. The team's commitment to excellence, coupled with their friendly and cordial approach, has significantly contributed to the positive dynamics of our long-term partnership.",
         "testim_t3" => "Yolanda Cardenas",
         "testim_t3d" => "Business Woman",
-        "testim_c3" => "We have found a reliable tech solutions provider. Its visionary concepts always bring to our multiple developments the differentiation factor. Our current projects are advancing as expected and the technical support from Artyficial team is key in the process of build a future proof company.",
+        "testim_c3" => "We have found a reliable tech solutions provider. Its visionary concepts always bring to our multiple developments the differentiation factor. Our current projects are advancing as expected and the technical support from Artyficial team is key in the process of build a future proof company at the cutting edge of latest advances.",
 
         "support_title" => "24/7 customer support",
         "support_content" => "Our commitment to providing the best service possible extends beyond the initial development phase. We understand that our clients may have questions or concerns at any time, which is why we offer 24/7 customer support. With our reliable support, you can have peace of mind knowing that your business is in good hands.",
@@ -134,7 +134,7 @@ $translations = array(
         "testim_c2" => "Una relación de larga duración en la que hemos construido todo tipo de servicios en múltiples plataformas con Artyficial. Siempre un equipo confiable. El compromiso del equipo con la excelencia, junto con su enfoque amigable y cordial, ha contribuido significativamente a la dinámica positiva de nuestra asociación a largo plazo.",
         "testim_t3" => "Yolanda Cárdenas",
         "testim_t3d" => "Mujer de negocios",
-        "testim_c3" => "Hemos encontrado un proveedor de soluciones tecnológicas confiable. Sus conceptos visionarios siempre aportan al factor de diferenciación en nuestros múltiples desarrollos.",
+        "testim_c3" => "Hemos encontrado un proveedor confiable de soluciones tecnológicas. Sus conceptos visionarios siempre aportan el factor diferenciador a nuestros múltiples desarrollos. Nuestros proyectos actuales están avanzando según lo esperado y el soporte técnico del equipo de Artyficial es clave en el proceso de construir una empresa a prueba de futuro en la vanguardia de los últimos avances.",
 
         "support_title" => "Soporte al cliente 24/7",
         "support_content" => "Nuestro compromiso de proporcionar el mejor servicio posible se extiende más allá de la fase inicial de desarrollo. Entendemos que nuestros clientes pueden tener preguntas o inquietudes en cualquier momento, por eso ofrecemos soporte al cliente 24/7. Con nuestro soporte confiable, puedes estar seguro de que tu negocio está en buenas manos.",
