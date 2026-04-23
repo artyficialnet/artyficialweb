@@ -37,6 +37,14 @@ $trans = $translations[$language];
   <link rel="stylesheet" href="./../css/owl.carousel.css">
   <link rel="stylesheet" href="./../css/owl.theme.css">
   <link rel="stylesheet" href="./../css/style.css">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NSBQR7RK');</script>
+  <!-- End Google Tag Manager -->
 </head>
 
 <!-- Google tag (gtag.js) New-->
@@ -49,6 +57,10 @@ $trans = $translations[$language];
 </script>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSBQR7RK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
   <header id="home" class="gradient-violat">
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -71,7 +83,7 @@ $trans = $translations[$language];
           <ul class="nav navbar-nav  navbar-right">
             <li class="active"><a href="#home"><?php echo $trans['menu_home_btn']; ?> <span class="sr-only">(current)</span></a></li>
             <li><a href="#customer-support"><?php echo $trans['menu_support_btn']; ?></a></li>
-            <li><a href="team"><?php echo $trans['menu_team_btn']; ?></a></li>
+             <!-- <li><a href="team"><?php echo $trans['menu_team_btn']; ?></a></li> -->
             <li><a href="#services"><?php echo $trans['menu_services_btn']; ?></a></li>
             <!-- <li><a href="#feature"><?php echo $trans['menu_solutions_btn']; ?></a></li> -->
             <li><a href="#contactus" class="btn btn-orange border-none btn-rounded-corner btn-navbar"><?php echo $trans['menu_contact_btn']; ?><span class="icon-on-button"><i class="ion-ios-bulb-outline"></i></span></a></li>

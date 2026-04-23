@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jitsi Meeting with Eye Tracking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        
+        .controls {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .control-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #2980b9;
+        }
+        
+        button:disabled {
+            background-color: #95a5a6;
+            cursor: not-allowed;
+        }
+        
+        .status {
+            padding: 10px;
+            border-radius: 4px;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            margin-top: 10px;
+            width: 100%;
+        }
+        
+        #room-controls {
+            margin-bottom: 15px;
+        }
+        
+        #room-controls input {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            width: 250px;
+            max-width: 100%;
+        }
+        
+        #meet-container {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        #meet {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .gaze-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 10;
+        }
+        
+        .gaze-cursor {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: rgba(255, 0, 0, 0.5);
+            transform: translate(-50%, -50%);
+            transition: all 0.1s ease;
+        }
+        
+        .calibration-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .calibration-point {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: red;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+        
+        .instructions {
+            color: white;
+            position: absolute;
+            top: 20px;
+            text-align: center;
+            font-size: 18px;
+            width: 100%;
+        }
+        
+        .participants-gaze {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        
+        .participant-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .color-indicator {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        #webgazer-video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 160px;
+            height: 120px;
+            z-index: 20;
+            opacity: 0.2;
+            transition: opacity 0.3s;
+        }
+        
+        #webgazer-video-container:hover {
+            opacity: 1;
+        }
+        
+        #debug-info {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 12px;
+            display: none;
+        }
+        
+        .error-message {
+            color: #e74c3c;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        /* Media queries for mobile */
+        @media (max-width: 768px) {
+            #meet-container {
+                height: 400px;
+            }
+            
+            .controls {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .status {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Jitsi Meeting with Eye Tracking</h1>
+        
+        <div class="controls">
+            <div class="control-buttons">
+                <button id="join-btn">Join Meeting</button>
+                <button id="leave-btn" disabled>Leave Meeting</button>
+                <button id="toggle-eye-tracking" disabled>Enable Eye Tracking</button>
+                <button id="calibrate-btn" disabled>Calibrate Eye Tracking</button>
+                <button id="toggle-debug">Show Debug Info</button>
+            </div>
+            <div class="status" id="status">Not connected to meeting</div>
+        </div>
+        
+        <div id="room-controls">
+            <input type="text" id="room-name" placeholder="Enter room name" value="EyeTrackingDemo">
+        </div>
+        
+        <div id="meet-container">
+            <div id="meet"></div>
+            <div id="gaze-overlay" class="gaze-overlay"></div>
+        </div>
+        
+        <div id="debug-info"></div>
+        
+        <div class="participants-gaze" id="participants-list">
+            <h3>Participants Eye Tracking</h3>
+            <div id="participants-items">
+                <!-- Participants will be listed here -->
+                <div class="participant-item">
+                    <span><span class="color-indicator" style="background-color: blue;"></span>You (not in meeting)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Load required external scripts
+        function loadScript(url, callback) {
+            const script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = url;
+            script.onload = callback;
+            script.onerror = function() {
+                logDebug(`Failed to load script: ${url}`);
+                showError(`Failed to load required script: ${url}. Please check your internet connection.`);
+            };
+            document.head.appendChild(script);
+        }
+        
+        // Debug logging
+        function logDebug(message) {
+            const debugInfo = document.getElementById('debug-info');
+            const timestamp = new Date().toLocaleTimeString();
+            debugInfo.innerHTML += `<div>[${timestamp}] ${message}</div>`;
+            console.log(`[${timestamp}] ${message}`);
+            
+            // Scroll to bottom
+            debugInfo.scrollTop = debugInfo.scrollHeight;
+        }
+        
+        function showError(message) {
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error-message';
+            errorDiv.textContent = message;
+            
+            const controls = document.querySelector('.controls');
+            controls.appendChild(errorDiv);
+            
+            // Auto remove after 10 seconds
+            setTimeout(() => {
+                if (errorDiv.parentNode) {
+                    errorDiv.parentNode.removeChild(errorDiv);
+                }
+            }, 10000);
+        }
+        
+        // Initialize application
+        document.addEventListener('DOMContentLoaded', function() {
+            logDebug('Application initializing...');
+            
+            // Setup debug toggle
+            document.getElementById('toggle-debug').addEventListener('click', function() {
+                const debugInfo = document.getElementById('debug-info');
+                if (debugInfo.style.display === 'block') {
+                    debugInfo.style.display = 'none';
+                    this.textContent = 'Show Debug Info';
+                } else {
+                    debugInfo.style.display = 'block';
+                    this.textContent = 'Hide Debug Info';
+                }
+            });
+            
+            // Check for browser compatibility
+            checkBrowserCompatibility();
+            
+            // First load the Jitsi API
+            logDebug('Loading Jitsi API...');
+            loadScript('https://meet.jit.si/external_api.js', function() {
+                logDebug('Jitsi API loaded successfully');
+                
+                // Then load WebGazer for eye tracking
+                logDebug('Loading WebGazer...');
+                loadScript('https://webgazer.cs.brown.edu/webgazer.js', function() {
+                    logDebug('WebGazer loaded successfully');
+                    initializeApp();
+                });
+            });
+        });
+        
+        function checkBrowserCompatibility() {
+            logDebug('Checking browser compatibility...');
+            
+            // Check for WebRTC support
+            const rtcSupport = !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia);
+            logDebug(`WebRTC support: ${rtcSupport}`);
+            
+            if (!rtcSupport) {
+                showError('Your browser does not support WebRTC which is required for video calls. Please use Chrome, Firefox, or Edge.');
+            }
+            
+            // Log browser information
+            logDebug(`Browser: ${navigator.userAgent}`);
+            
+            // Check if running in an iframe
+            const isInIframe = window !== window.parent;
+            logDebug(`Running in iframe: ${isInIframe}`);
+            if (isInIframe) {
+                showError('This application may not work correctly when running inside an iframe.');
+            }
+            
+            return rtcSupport && !isInIframe;
+        }
+        
+        // Global variables
+        let jitsiApi = null;
+        let eyeTrackingEnabled = false;
+        let webgazerInitialized = false;
+        let localGazeCursor = null;
+        let remoteGazeCursors = {};
+        let participantInfo = {};
+        let myUserId = null;
+        
+        function initializeApp() {
+            logDebug('Initializing application UI...');
+            
+            // Setup UI controls
+            const joinBtn = document.getElementById('join-btn');
+            const leaveBtn = document.getElementById('leave-btn');
+            const toggleBtn = document.getElementById('toggle-eye-tracking');
+            const calibrateBtn = document.getElementById('calibrate-btn');
+            const statusEl = document.getElementById('status');
+            const roomNameInput = document.getElementById('room-name');
+            
+            joinBtn.addEventListener('click', function() {
+                const roomName = roomNameInput.value.trim() || 'EyeTrackingDemo';
+                logDebug(`Joining room: ${roomName}`);
+                initializeJitsi(roomName);
+                
+                joinBtn.disabled = true;
+                leaveBtn.disabled = false;
+                calibrateBtn.disabled = false;
+                statusEl.textContent = `Connecting to meeting: ${roomName}...`;
+            });
+            
+            leaveBtn.addEventListener('click', function() {
+                logDebug('Leaving meeting...');
+                if (jitsiApi) {
+                    jitsiApi.dispose();
+                    jitsiApi = null;
+                }
+                
+                joinBtn.disabled = false;
+                leaveBtn.disabled = true;
+                toggleBtn.disabled = true;
+                calibrateBtn.disabled = true;
+                statusEl.textContent = 'Not connected to meeting';
+                
+                // Clean up cursors
+                const overlay = document.getElementById('gaze-overlay');
+                overlay.innerHTML = '';
+                localGazeCursor = null;
+                remoteGazeCursors = {};
+                
+                // Reset participant info
+                participantInfo = {};
+                updateParticipantsList();
+                
+                // Pause WebGazer
+                if (webgazerInitialized) {
+                    try {
+                        webgazer.pause();
+                        logDebug('WebGazer paused');
+                    } catch (e) {
+                        logDebug(`Error pausing WebGazer: ${e.message}`);
+                    }
+                }
+            });
+            
+            toggleBtn.addEventListener('click', function() {
+                toggleEyeTracking();
+                toggleBtn.textContent = eyeTrackingEnabled ? 'Disable Eye Tracking' : 'Enable Eye Tracking';
+            });
+            
+            calibrateBtn.addEventListener('click', function() {
+                if (!webgazerInitialized) {
+                    initializeWebGazer().then(() => {
+                        calibrateEyeTracking();
+                    }).catch(error => {
+                        showError(`Failed to initialize eye tracking: ${error.message}`);
+                        logDebug(`WebGazer initialization error: ${error.message}`);
+                    });
+                } else {
+                    calibrateEyeTracking();
+                }
+            });
+            
+            logDebug('Application UI initialized');
+        }
+        
+        function initializeJitsi(roomName) {
+            try {
+                logDebug('Initializing Jitsi...');
+                const domain = 'meet.jit.si';
+                const options = {
+                    roomName: roomName,
+                    width: '100%',
+                    height: '100%',
+                    parentNode: document.querySelector('#meet'),
+                    configOverwrite: {
+                        prejoinPageEnabled: false,
+                        startWithAudioMuted: true,
+                        startWithVideoMuted: false,
+                        enableWelcomePage: false,
+                        disableDeepLinking: true,
+                        // Improved WebRTC settings
+                        p2p: {
+                            enabled: true,
+                            preferH264: true,
+                            disableH264: false,
+                            useStunTurn: true
+                        },
+                        // Audio/video quality settings
+                        resolution: 720,
+                        constraints: {
+                            video: {
+                                height: {
+                                    ideal: 720,
+                                    max: 720,
+                                    min: 240
+                                }
+                            }
+                        }
+                    },
+                    interfaceConfigOverwrite: {
+                        TOOLBAR_BUTTONS: [
+                            'microphone', 'camera', 'desktop', 'fullscreen',
+                            'fodeviceselection', 'hangup', 'profile', 'chat', 
+                            'settings', 'raisehand', 'videoquality', 'filmstrip',
+                            'tileview', 'security', 'toggle-camera'
+                        ],
+                        SHOW_JITSI_WATERMARK: false,
+                        SHOW_WATERMARK_FOR_GUESTS: false,
+                        DEFAULT_REMOTE_DISPLAY_NAME: 'Participant',
+                        DISABLE_FOCUS_INDICATOR: true,
+                        DISABLE_VIDEO_BACKGROUND: true
+                    },
+                    // Improved connection quality settings
+                    userInfo: {
+                        displayName: 'Eye Tracking User'
+                    }
+                };
+                
+                // Create Jitsi API instance
+                jitsiApi = new JitsiMeetExternalAPI(domain, options);
+                logDebug('Jitsi API instance created');
+                
+                // Setup event listeners
+                setupJitsiEventListeners();
+                
+            } catch (e) {
+                logDebug(`Error initializing Jitsi: ${e.mes

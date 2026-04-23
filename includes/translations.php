@@ -81,7 +81,7 @@ $translations = array(
         "footer_col2_tit" => "Bogotá",
         "footer_col3_tit" => "Redes",
 
-        "address_mia" => "1431 Southwest 27th Court, FL 33315 / Florida - USA" ,
+        "address_mia" => "1441 Southwest 21th Court, FL 33515 / Florida - USA" ,
         "address_bog" => "Av. 7 No. 59a 20, Of. 1101 / Bogotá - Colombia",
 
         "tel_contact" => "+57 324 5566 009",
@@ -172,7 +172,7 @@ $translations = array(
         "footer_col2_tit" => "Bogotá",
         "footer_col3_tit" => "Redes",
 
-        "address_mia" => "1431 Southwest 27th Court, FL 33315 / Florida - USA" ,
+        "address_mia" => "1441 Southwest 21th Court, FL 33515 / Florida - USA" ,
         "address_bog" => "Av. 7 No. 59a 20, Of. 1101 / Bogotá - Colombia",
 
         "tel_contact" => "+57 324 5566 009",

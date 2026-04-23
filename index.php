@@ -3,16 +3,8 @@
 <section id="introduction" class="gradient-violat padding-top-90 home-slider">
   <div id='stars'></div>
   <div id="home-slider" class="owl-carousel">
-    <div>
-      <div class="sliding-card-with-bottom-image text-center padding-top-90">
-        <h2 class="cta-heading text-white"><?php echo $trans['welcome1']; ?></h2>
-        <p class="text-white slider-para"><?php echo $trans['welcome1l1']; ?></p>
-        <p class="text-white slider-para"> </p>
-        <div class="image-container text-center sm-display-none">
-          <img class="img-responsive" src="images/mockuo2.png" alt="">
-        </div>
-      </div>
-    </div>
+    
+    
 
     <div>
       <div class="container">
@@ -26,6 +18,18 @@
         </div>
       </div>
     </div>
+
+    <div>
+      <div class="sliding-card-with-bottom-image text-center padding-top-90">
+        <h2 class="cta-heading text-white"><?php echo $trans['welcome1']; ?></h2>
+        <p class="text-white slider-para"><?php echo $trans['welcome1l1']; ?></p>
+        <p class="text-white slider-para"> </p>
+        <div class="image-container text-center sm-display-none">
+          <img class="img-responsive" src="images/mockuo2.png" alt="">
+        </div>
+      </div>
+    </div>
+    
   </div>
 </section>
 
