@@ -144,7 +144,7 @@
       <div class="customer-support-content padding-top-bottom-120 sm-padding-top-bottom-50-75">
         <h4><?php echo $trans['support_title']; ?></h4>
         <p class="margin-top-bottom-30"><?php echo $trans['support_content']; ?></p>
-        <a class="btn btn-orange border-none btn-rounded-corner" href="https://api.whatsapp.com/send?phone=+573138408816&text=Support%20request%20from%20Website" target="_blank"><?php echo $trans['support_action']; ?><span class="icon-on-button"><i class="ion-ios-arrow-thin-right"></i></span></a>
+        <a class="btn btn-orange border-none btn-rounded-corner" href="https://api.whatsapp.com/send?phone=+573245566009&text=Support%20request%20from%20Website" target="_blank"><?php echo $trans['support_action']; ?><span class="icon-on-button"><i class="ion-ios-arrow-thin-right"></i></span></a>
       </div>
     </div>
   </div>
