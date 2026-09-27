@@ -1,13 +1,6 @@
 {
-    "require": {
-        "mailgun/mailgun-php": "^3.5",
-        "symfony/http-client": "^6.0",
-        "nyholm/psr7": "^1.7",
-        "symfony/console": "^6.2"
-    },
-    "config": {
-        "allow-plugins": {
-            "php-http/discovery": true
-        }
-    }
+    "name": "artyficialnet/artyficialweb",
+    "description": "Artyficial Technologies corporate website (PHP, no third-party libraries).",
+    "license": "proprietary",
+    "require": {}
 }
