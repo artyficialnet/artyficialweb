@@ -11,7 +11,6 @@
             <div class="content">
               <p class="margin-bottom-30 margin-top-30"><?php echo $trans['contact_tagline']; ?></p>
               <p></p>
-              <a href="tel:<?php echo $trans['tel_contact']; ?>"><?php echo $trans['tel_contact']; ?></a>
 
               <p><a href="mailto:<?php echo $trans['email_corp']; ?>"><?php echo $trans['email_corp']; ?></a></p>
             </div>
@@ -19,21 +18,8 @@
         </div>
         <div class="col-md-8">
           <div class="row">
-            <div class="col-md-9 col-sm-12">
-              <div class="footer-list-wiget">
-                <h4><?php echo $trans['footer_col1_tit']; ?></h4>
-                <div class="list-group">
-                  <a href="#" class="list-group-item"><?php echo $trans['address_mia']; ?></a>
-                </div>
-              </div>
-              <div class="footer-list-wiget">
-                <h4><?php echo $trans['footer_col2_tit']; ?></h4>
-                <div class="list-group">
-                <a href="#" class="list-group-item"><?php echo $trans['address_bog']; ?></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
+            
+            <div class="col-md-12 col-sm-12">
               <div class="footer-list-wiget">
                 <h4><?php echo $trans['footer_col3_tit']; ?></h4>
                 <div class="list-group">
