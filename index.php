@@ -113,6 +113,14 @@
             <p class="services-content margin-bottom-25"><?php echo $trans['service_c4']; ?></p>
           </div>
         </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <h5 class="service-title"><?php echo $trans['service_t5']; ?></h5>
+            <p class="services-content margin-bottom-25"><?php echo $trans['service_c5']; ?></p>
+          </div>
+          <div class="col-md-6 col-sm-6">
+          </div>
+        </div>
       </div>
     </div>
   </div>

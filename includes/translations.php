@@ -30,6 +30,8 @@ $translations = array(
         "service_c3" => "We work with cross-platform development tools and frameworks to build mobile applications that can run seamlessly on multiple platforms and the web. By using a single codebase, we are able to minimize development time and costs of operations.",
         "service_t4" => "Responsive development",
         "service_c4" => "One of the key aspects of our responsive development service is our commitment to pixel-perfect design. We understand the importance of precision in design to ensure that every element on a website is perfectly aligned and visually consistent.",
+        "service_t5" => "AI Agents",
+        "service_c5" => "We design, configure and deploy artificial intelligence agents that automate workflows, enhance customer experience and drive data-informed decisions. From chatbots and virtual assistants to intelligent process automation, we integrate cutting-edge AI solutions tailored to your business objectives.",
         
         "power_message_a" => "Empowering your digital transformation",
         "power_message_a1" => "We make your business idea come true",
@@ -116,6 +118,8 @@ $translations = array(
         "service_c3" => "Trabajamos con herramientas y marcos de desarrollo de múltiples plataformas para construir aplicaciones móviles que puedan funcionar sin problemas en múltiples plataformas y en la web. Al usar una sola base de código, podemos minimizar el tiempo de desarrollo y los costos de operación.",
         "service_t4" => "Desarrollo responsivo",
         "service_c4" => "Uno de los aspectos clave de nuestro servicio de desarrollo responsivo es nuestro compromiso con el diseño preciso. Entendemos la importancia de la precisión en el diseño, y hacemos un esfuerzo adicional para asegurarnos de que cada elemento en un sitio web esté perfectamente al",
+        "service_t5" => "Agentes de IA",
+        "service_c5" => "Diseñamos, configuramos e implementamos agentes de inteligencia artificial que automatizan flujos de trabajo, mejoran la experiencia del cliente e impulsan decisiones basadas en datos. Desde chatbots y asistentes virtuales hasta automatización inteligente de procesos, integramos soluciones de IA de vanguardia adaptadas a los objetivos de tu negocio.",
     
         "power_message_a" => "Potenciando tu transformación digital",
         "power_message_a1" => "Hacemos realidad tu idea de negocio",
